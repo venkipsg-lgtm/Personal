@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Venkatesh Vellaisamy — Senior Product Manager specializing in enterprise retail technology, order management, marketplaces, and omnichannel fulfillment.">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Venkatesh Vellaisamy — Senior Product Manager</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d1d1f'/%3E%3Cpath d='M15 18h9l8 25 8-25h9L37 49H27z' fill='white'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f5f5f7; --surface: rgba(255,255,255,.82); --solid: #fff;
+      --text: #1d1d1f; --muted: #6e6e73; --line: rgba(0,0,0,.09);
+      --blue: #0066cc; --blue-soft: #eaf4ff; --nav: rgba(250,250,252,.82);
+      --shadow: 0 24px 70px rgba(0,0,0,.08); --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif; font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .skip { position: fixed; left: 16px; top: -60px; z-index: 100; padding: 10px 16px; background: var(--text); color: var(--bg); border-radius: 99px; }
+    .skip:focus { top: 12px; }
+    nav { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line); background: var(--nav); backdrop-filter: saturate(180%) blur(20px); }
+    .nav-inner { max-width: 1180px; height: 64px; margin: auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-weight: 650; text-decoration: none; letter-spacing: -.02em; white-space: nowrap; }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a { color: var(--muted); font-size: .9rem; text-decoration: none; transition: color .2s; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--text); }
+    .contact-pill { display: inline-flex; align-items: center; gap: 7px; padding: 8px 15px; border-radius: 99px; background: var(--text); color: var(--bg) !important; font-weight: 600; }
+    main { overflow: hidden; }
+    .wrap { max-width: 1180px; margin: auto; padding-inline: 24px; }
+    .hero { min-height: 740px; display: grid; align-items: center; padding: 88px 0 64px; position: relative; }
+    .hero::after { content: ""; position: absolute; width: 520px; height: 520px; border-radius: 50%; right: -260px; top: 70px; background: radial-gradient(circle, rgba(0,102,204,.17), rgba(0,102,204,0) 68%); pointer-events: none; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--blue); font-weight: 650; letter-spacing: .01em; margin-bottom: 22px; }
+    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #34c759; box-shadow: 0 0 0 5px rgba(52,199,89,.12); }
+    h1 { max-width: 970px; margin: 0; font-size: clamp(3.5rem, 8vw, 7.3rem); line-height: .94; letter-spacing: -.072em; font-weight: 720; }
+    h1 span { color: var(--muted); }
+    .hero-copy { max-width: 735px; margin: 34px 0 0; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.45; color: var(--muted); letter-spacing: -.015em; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 20px; border: 0; border-radius: 99px; background: var(--blue); color: white; text-decoration: none; font: inherit; font-weight: 620; cursor: pointer; transition: transform .2s, filter .2s; }
+    .button:hover { transform: translateY(-2px); filter: brightness(1.07); }
+    .button.secondary { background: var(--solid); color: var(--text); border: 1px solid var(--line); }
+    .arrow { font-size: 1.1em; transform: translateY(-1px); }
+    section { padding: 104px 0; }
+    .section-head { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; margin-bottom: 44px; }
+    .kicker { color: var(--blue); font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h2 { margin: 0; max-width: 800px; font-size: clamp(2.25rem, 5vw, 4.25rem); line-height: 1.04; letter-spacing: -.055em; }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .metric { min-height: 270px; padding: 28px; border-radius: var(--radius); background: var(--solid); box-shadow: 0 1px 0 var(--line); display: flex; flex-direction: column; justify-content: space-between; transition: transform .25s, box-shadow .25s; }
+    .metric:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .metric:nth-child(2) { background: #1d1d1f; color: #f5f5f7; }
+    .metric:nth-child(3) { background: var(--blue-soft); }
+    .metric:nth-child(5) { background: linear-gradient(145deg, #0066cc, #2997ff); color: white; }
+    .metric-value { font-size: clamp(2.7rem, 5vw, 4.6rem); line-height: 1; letter-spacing: -.06em; font-weight: 720; }
+    .metric-title { margin: 0 0 5px; font-size: 1.05rem; font-weight: 650; }
+    .metric p { margin: 0; color: inherit; opacity: .72; font-size: .92rem; }
+    .expertise-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 16px; }
+    .panel { padding: clamp(28px, 5vw, 56px); border-radius: var(--radius); background: var(--solid); }
+    .panel h3 { margin: 0 0 22px; font-size: clamp(1.65rem, 3vw, 2.4rem); letter-spacing: -.035em; }
+    .panel p { margin: 0; color: var(--muted); font-size: 1.08rem; max-width: 670px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+    .tag { padding: 9px 13px; border-radius: 99px; background: var(--bg); color: #3a3a3c; font-size: .9rem; font-weight: 550; }
+    .principle { background: #101820; color: white; display: flex; flex-direction: column; justify-content: space-between; }
+    .principle .quote { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.22; letter-spacing: -.035em; }
+    .principle small { margin-top: 48px; color: #a1a1a6; font-size: .9rem; }
+    .timeline { position: relative; margin-left: 10px; }
+    .timeline::before { content: ""; position: absolute; left: 6px; top: 10px; bottom: 30px; width: 1px; background: var(--line); }
+    .role { position: relative; display: grid; grid-template-columns: 190px 1fr; gap: 45px; padding: 0 0 64px 46px; }
+    .role::before { content: ""; position: absolute; left: 0; top: 8px; width: 13px; height: 13px; border-radius: 50%; background: var(--solid); border: 3px solid var(--blue); box-shadow: 0 0 0 5px var(--bg); }
+    .role time { color: var(--muted); font-size: .92rem; }
+    .role h3 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
+    .role .title { margin: 4px 0 15px; color: var(--blue); font-weight: 620; }
+    .role p { max-width: 710px; margin: 0; color: var(--muted); font-size: 1.02rem; }
+    .education { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .degree { padding: 32px; min-height: 205px; border-radius: var(--radius); background: var(--solid); display: flex; flex-direction: column; justify-content: space-between; }
+    .degree .school { color: var(--blue); font-weight: 650; }
+    .degree h3 { margin: 8px 0 0; font-size: 1.55rem; line-height: 1.18; letter-spacing: -.025em; }
+    .degree time { color: var(--muted); }
+    .cta { margin-bottom: 32px; padding: clamp(40px, 8vw, 88px); border-radius: 36px; background: linear-gradient(135deg, #171719 0%, #242427 100%); color: white; text-align: center; }
+    .cta h2 { margin-inline: auto; }
+    .cta p { max-width: 600px; margin: 22px auto 30px; color: #a1a1a6; font-size: 1.08rem; }
+    footer { padding: 28px 0 44px; color: var(--muted); font-size: .88rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding-top: 28px; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    :focus-visible { outline: 3px solid rgba(0,102,204,.45); outline-offset: 3px; }
+    @media (max-width: 780px) {
+      .nav-links a:not(.contact-pill) { display: none; }
+      .hero { min-height: auto; padding-top: 72px; }
+      h1 { font-size: clamp(3.25rem, 16vw, 5.5rem); }
+      .section-head, .expertise-grid { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .metric { min-height: 230px; }
+      .role { grid-template-columns: 1fr; gap: 8px; padding-left: 38px; }
+      .education { grid-template-columns: 1fr; }
+      section { padding: 78px 0; }
+    }
+    @media (max-width: 500px) {
+      .wrap, .nav-inner { padding-inline: 18px; }
+      .metrics { grid-template-columns: 1fr; }
+      .metric { min-height: 210px; }
+      .hero-actions .button { width: 100%; }
+      .footer-inner { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } .reveal { opacity: 1; transform: none; } }
+    @media print { nav, .hero-actions, .skip { display: none; } body { background: white; } .hero { min-height: auto; padding-top: 30px; } section { padding: 38px 0; break-inside: avoid; } .reveal { opacity: 1; transform: none; } .metric, .panel, .degree, .cta { box-shadow: none; border: 1px solid #ddd; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <nav aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Venkatesh Vellaisamy, home">Venkatesh Vellaisamy</a>
+      <div class="nav-links">
+        <a href="#impact">Impact</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a>
+        <a class="contact-pill" href="mailto:venki.psg@gmail.com">Let’s connect <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero wrap" id="top">
+      <div>
+        <div class="eyebrow">Senior Product Manager · McKinney, Texas</div>
+        <h1>Complex platforms.<br><span>Clear outcomes.</span></h1>
+        <p class="hero-copy">I build and scale enterprise retail and digital products—turning operational complexity into intuitive customer experiences and measurable business growth.</p>
+        <div class="hero-actions">
+          <a class="button" href="#impact">See my impact <span class="arrow" aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="https://www.linkedin.com/in/venkateshvellaisamy" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </header>
+
+    <section id="impact" class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Selected impact</div>
+        <h2>Products that move the numbers that matter.</h2>
+      </div>
+      <div class="metrics">
+        <article class="metric reveal"><div class="metric-value">$16M+</div><div><h3 class="metric-title">Annual revenue</h3><p>Generated by launching Affirm Buy Now, Pay Later.</p></div></article>
+        <article class="metric reveal"><div class="metric-value">3×</div><div><h3 class="metric-title">Average order value</h3><p>Growth achieved through the BNPL experience.</p></div></article>
+        <article class="metric reveal"><div class="metric-value">90%</div><div><h3 class="metric-title">Lower chargeback losses</h3><p>Delivered through online fraud prevention capabilities.</p></div></article>
+        <article class="metric reveal"><div class="metric-value">+15%</div><div><h3 class="metric-title">Sign-up conversion</h3><p>Alongside +20% Rewards enrollment and 100K+ registrations monthly.</p></div></article>
+        <article class="metric reveal"><div class="metric-value">6×</div><div><h3 class="metric-title">Enterprise adoption</h3><p>Expanded CBRE’s platform from 50 to 300+ customer accounts.</p></div></article>
+        <article class="metric reveal"><div class="metric-value">50K+</div><div><h3 class="metric-title">Marketplace sellers</h3><p>Enabled through automated seller onboarding and vetting.</p></div></article>
+      </div>
+    </section>
+
+    <section id="expertise" class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">What I do</div>
+        <h2>Business strategy, translated into scalable technology.</h2>
+      </div>
+      <div class="expertise-grid">
+        <article class="panel reveal">
+          <h3>Product leadership across complex ecosystems</h3>
+          <p>With 12+ years across retail, e-commerce, commercial real estate, travel, and healthcare, I partner with engineering, design, operations, and business leaders to build products people can use—and businesses can scale.</p>
+          <div class="tags" aria-label="Areas of expertise">
+            <span class="tag">Enterprise Retail</span><span class="tag">Order Management</span><span class="tag">Omnichannel Fulfillment</span><span class="tag">Marketplace Integrations</span><span class="tag">Payments</span><span class="tag">Customer Experience</span><span class="tag">Platform Modernization</span><span class="tag">Product Strategy</span><span class="tag">AI Product Management</span>
+          </div>
+        </article>
+        <aside class="panel principle reveal">
+          <div class="quote">“Bridge business strategy with technical execution.”</div>
+          <small>Engineering foundation · Executive MBA · Product mindset</small>
+        </aside>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Experience</div>
+        <h2>Two decades of building, modernizing, and leading.</h2>
+      </div>
+      <div class="timeline">
+        <article class="role reveal"><time>2022 — Present</time><div><h3>Michaels Stores</h3><div class="title">Senior Product Manager</div><p>Leading order management, fulfillment, marketplace, payment, customer growth, protection-plan, and fraud-prevention products for a large-scale omnichannel retail ecosystem.</p></div></article>
+        <article class="role reveal"><time>2019 — 2022</time><div><h3>CBRE</h3><div class="title">Product Manager</div><p>Owned strategy and roadmap for a Salesforce-based commercial real estate transaction platform supporting 50K+ transactions annually; grew adoption 6× and improved client NPS by 10 points.</p></div></article>
+        <article class="role reveal"><time>2018 — 2019</time><div><h3>GlobalLogic · Walgreens</h3><div class="title">Product Owner</div><p>Led the RxProcessing workstream within the modernization of Walgreens’ prescription management platform, supporting more than 9,000 retail pharmacies.</p></div></article>
+        <article class="role reveal"><time>2011 — 2018</time><div><h3>Cognizant · Travelport</h3><div class="title">Senior Consultant</div><p>Led discovery and requirements for enterprise travel booking platforms and REST API modernization; contributed to Smartpoint’s rollout to 30K+ travel agents worldwide.</p></div></article>
+        <article class="role reveal"><time>2004 — 2010</time><div><h3>Mindtree · Emirates</h3><div class="title">Software Engineer / Associate</div><p>Built Java and SQL applications and integration services for Emirates SkyCargo’s global cargo booking and operations platform in Dubai.</p></div></article>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="education-title">
+      <div class="section-head reveal"><div class="kicker">Education</div><h2 id="education-title">Technical roots. Business perspective.</h2></div>
+      <div class="education">
+        <article class="degree reveal"><div><div class="school">XLRI Jamshedpur</div><h3>Master of Business Administration</h3></div><time>2010 — 2011</time></article>
+        <article class="degree reveal"><div><div class="school">PSG College of Technology</div><h3>B.E. in Information Technology</h3></div><time>2000 — 2004</time></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <div class="cta reveal">
+        <div class="kicker" style="color:#64b5ff">Let’s build what’s next</div>
+        <h2>Have a complex product challenge?</h2>
+        <p>I’m always interested in thoughtful conversations about enterprise platforms, retail technology, and AI-powered product experiences.</p>
+        <a class="button" href="mailto:venki.psg@gmail.com">venki.psg@gmail.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap"><div class="footer-inner"><span>© <span id="year"></span> Venkatesh Vellaisamy</span><span>Product strategy · Platform execution · Measurable impact</span></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observer = new IntersectionObserver((entries) => entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      }), { threshold: .12 });
+      items.forEach(item => observer.observe(item));
+    } else { items.forEach(item => item.classList.add('visible')); }
+  </script>
+</body>
+</html>
